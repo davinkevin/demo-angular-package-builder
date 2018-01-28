@@ -212,28 +212,29 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-angular-package-builder@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/angular-package-builder/-/angular-package-builder-1.0.0.tgz#5517816af63b0342bfb5409ec9616c3541fbb4bb"
+angular-package-builder@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/angular-package-builder/-/angular-package-builder-1.0.1.tgz#39a49de0c91ac97624bd1b1e2715c871aa3d129f"
   dependencies:
     chalk "2.3.x"
     clean-css "4.1.x"
     cpx "1.5.x"
     del "3.0.x"
-    fs-extra "4.0.x"
+    fs-extra "5.0.x"
     globby "7.1.x"
     html-minifier "3.5.x"
     jsonschema "1.2.x"
-    memfs "2.5.x"
-    node-sass "4.6.x"
+    memfs "2.6.x"
     parse-packagejson-name "1.0.x"
     proxyquire "1.8.x"
-    rollup "0.51.x"
+    rollup "0.54.x"
     rollup-plugin-commonjs "8.2.x"
     rollup-plugin-node-resolve "3.0.x"
-    semver "5.4.x"
+    semver "5.5.x"
     unixify "1.0.x"
-    yargs "10.0.x"
+    yargs "10.1.x"
+  optionalDependencies:
+    node-sass ">= 4.3.0"
 
 ansi-html@0.0.7:
   version "0.0.7"
@@ -864,6 +865,14 @@ cliui@^3.2.0:
   dependencies:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
+    wrap-ansi "^2.0.0"
+
+cliui@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/cliui/-/cliui-4.0.0.tgz#743d4650e05f36d1ed2575b59638d87322bfbbcc"
+  dependencies:
+    string-width "^2.1.1"
+    strip-ansi "^4.0.0"
     wrap-ansi "^2.0.0"
 
 clone-deep@^0.3.0:
@@ -1954,7 +1963,15 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@4.0.x, fs-extra@^4.0.0:
+fs-extra@5.0.x:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
+fs-extra@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
   dependencies:
@@ -1962,9 +1979,9 @@ fs-extra@4.0.x, fs-extra@^4.0.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-monkey@^0.2.1:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-0.2.2.tgz#1c046adafeb715012d90f2ca3e951c70398d6138"
+fs-monkey@^0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-0.3.1.tgz#69edd8420e04da04d4d3ea200da1ccdc444eecd0"
 
 fs-write-stream-atomic@^1.0.8:
   version "1.0.10"
@@ -3026,12 +3043,12 @@ mem@^1.1.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-memfs@2.5.x:
-  version "2.5.10"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.5.10.tgz#73899e5bdc23a3707b62971392971745fa698bbd"
+memfs@2.6.x:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.6.2.tgz#5322c4371207f34798a63fb2f100a13a2b6bf044"
   dependencies:
     fast-extend "0.0.2"
-    fs-monkey "^0.2.1"
+    fs-monkey "^0.3.0"
 
 memory-fs@^0.4.0, memory-fs@^0.4.1, memory-fs@~0.4.1:
   version "0.4.1"
@@ -3284,30 +3301,7 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-node-sass@4.6.x:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.6.1.tgz#9b331cf943ee5440f199e858941a90d13bc9bfc5"
-  dependencies:
-    async-foreach "^0.1.3"
-    chalk "^1.1.1"
-    cross-spawn "^3.0.0"
-    gaze "^1.0.0"
-    get-stdin "^4.0.1"
-    glob "^7.0.3"
-    in-publish "^2.0.0"
-    lodash.assign "^4.2.0"
-    lodash.clonedeep "^4.3.2"
-    lodash.mergewith "^4.6.0"
-    meow "^3.7.0"
-    mkdirp "^0.5.1"
-    nan "^2.3.2"
-    node-gyp "^3.3.1"
-    npmlog "^4.0.0"
-    request "^2.79.0"
-    sass-graph "^2.2.4"
-    stdout-stream "^1.4.0"
-
-node-sass@^4.3.0:
+"node-sass@>= 4.3.0", node-sass@^4.3.0:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.7.2.tgz#9366778ba1469eb01438a9e8592f4262bcb6794e"
   dependencies:
@@ -4303,7 +4297,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@2, request@^2.79.0:
+request@2:
   version "2.83.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.83.0.tgz#ca0b65da02ed62935887808e6f510381034e3356"
   dependencies:
@@ -4462,9 +4456,9 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.3.0"
     micromatch "^2.3.11"
 
-rollup@0.51.x:
-  version "0.51.8"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.51.8.tgz#58bd0b642885f4770b5f93cc64f14e4233c2236d"
+rollup@0.54.x:
+  version "0.54.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.54.1.tgz#415a5d999421502646cf54b873fc4ce1a7393970"
 
 run-queue@^1.0.0, run-queue@^1.0.3:
   version "1.0.3"
@@ -4539,9 +4533,13 @@ selfsigned@^1.9.1:
   dependencies:
     node-forge "0.6.33"
 
-"semver@2 || 3 || 4 || 5", semver@5.4.x, semver@^5.1.0, semver@^5.3.0:
+"semver@2 || 3 || 4 || 5", semver@^5.1.0, semver@^5.3.0:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
+
+semver@5.5.x:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
 
 semver@~5.3.0:
   version "5.3.0"
@@ -4852,7 +4850,7 @@ string-width@^1.0.1, string-width@^1.0.2:
     is-fullwidth-code-point "^1.0.0"
     strip-ansi "^3.0.0"
 
-string-width@^2.0.0:
+string-width@^2.0.0, string-width@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-2.1.1.tgz#ab93f27a8dc13d28cac815c462143a6d9012ae9e"
   dependencies:
@@ -5512,17 +5510,17 @@ yargs-parser@^7.0.0:
   dependencies:
     camelcase "^4.1.0"
 
-yargs-parser@^8.0.0:
+yargs-parser@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-8.1.0.tgz#f1376a33b6629a5d063782944da732631e966950"
   dependencies:
     camelcase "^4.1.0"
 
-yargs@10.0.x:
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-10.0.3.tgz#6542debd9080ad517ec5048fb454efe9e4d4aaae"
+yargs@10.1.x:
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-10.1.2.tgz#454d074c2b16a51a43e2fb7807e4f9de69ccb5c5"
   dependencies:
-    cliui "^3.2.0"
+    cliui "^4.0.0"
     decamelize "^1.1.1"
     find-up "^2.1.0"
     get-caller-file "^1.0.1"
@@ -5533,7 +5531,7 @@ yargs@10.0.x:
     string-width "^2.0.0"
     which-module "^2.0.0"
     y18n "^3.2.1"
-    yargs-parser "^8.0.0"
+    yargs-parser "^8.1.0"
 
 yargs@^6.6.0:
   version "6.6.0"
