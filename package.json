@@ -1,5 +1,5 @@
 {
-  "name": "demo-angular-package-builder",
+  "name": "test-angular-package-builder",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -10,29 +10,31 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "typings": "./demo-angular-package-builder.d.ts",
-  "main": "./bundles/demo-angular-package-builder.umd.js",
-  "module": "./esm5/demo-angular-package-builder.js",
-  "es2015": "./esm2015/demo-angular-package-builder.js",
   "private": true,
   "peerDependencies": {
-    "@angular/common": "^5.1.0",
-    "@angular/core": "^5.1.0",
+    "@angular/common": "^5.2.0",
+    "@angular/core": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/cli": "1.6.4",
-    "@angular/common": "^5.1.0",
-    "@angular/compiler": "^5.1.0",
-    "@angular/compiler-cli": "^5.1.0",
-    "@angular/core": "^5.1.0",
-    "@angular/language-service": "^5.1.0",
+    "@angular/animations": "^5.2.0",
+    "@angular/cli": "1.6.6",
+    "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/forms": "^5.2.0",
+    "@angular/http": "^5.2.0",
+    "@angular/language-service": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/router": "^5.2.0",
     "angular-package-builder": "^1.0.1",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "typescript": "~2.4.2",
+    "typescript": "~2.5.2",
     "zone.js": "^0.8.19"
   }
 }
